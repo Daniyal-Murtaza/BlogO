@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<p class="text-bg-dark text-center p-1"> Login to BlogO </p>
+<p class="text-center">Please type your username and password to login:</p>
+<form method="post" class="text-center">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">Login</button>
+</form>
+{% endblock %}

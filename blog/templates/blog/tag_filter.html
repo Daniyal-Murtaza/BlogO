@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>Search result for tag: </h2>
+    {% for blog in blogs %}
+        <h3><a href="{% url 'blog_detail' blog.id %}">{{ blog.title }}</a></h3>
+        <p>{{ blog.created_at }}</p>
+        <p>{{ blog.text|truncatechars:100 }}</p>
+    {% endfor %}
+{% endblock %}

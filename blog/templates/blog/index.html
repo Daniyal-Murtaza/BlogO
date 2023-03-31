@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<p class="text-bg-dark text-center p-1"> Blogs published in BlogO </p>
+
+{% for blog in blogs %}
+
+    <h4><a href="{% url 'blog_detail' blog.id %}">{{ blog.title }}</a></h4>
+    <p>{{ blog.created_at }}</p>
+    <p>{{ blog.text|truncatechars:300 }}</p>
+    <hr>
+{% endfor %}
+
+{% endblock %}
