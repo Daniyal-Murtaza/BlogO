@@ -47,11 +47,6 @@ python manage.py runserver
 
 8. By running the command in step 7, it will give you a link (http://127.0.0.1:8000/). You can click on that to directly redirect into the website or you can just write (http://localhost:8000) in the browser.
 
-### **Work Distribution:**
-- Daniyal Murtaza: 50%
-- Hammad Hussain: 50%
-- We have done this homework with total coordination with each other.
-
 ### **Refernces:**
 - https://getbootstrap.com/docs/5.3/getting-started/introduction/
 - https://fonts.google.com/
